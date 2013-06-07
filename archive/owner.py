@@ -1,10 +1,2 @@
-from django.db import models
+#trying to make a mixin
 
-class Owner(models.Model):
-    username     = models.CharField(max_length=30)
-    password_hsh = models.TextField()
-    class Meta:
-        abstract = true
-    
-class Ownable(models.Model):
-    
